@@ -1,0 +1,65 @@
+/* Stiluri pentru secțiunea "Despre noi" */
+#about {
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+
+/* Stiluri pentru secțiunea "Servicii" */
+#services {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+/* Stiluri pentru secțiunea "Echipa" */
+#team {
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+
+/* Stiluri pentru secțiunea "Fotografii" */
+#photos {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+/* Animatie pentru derulare lină */
+.navbar-nav a.nav-link {
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav a.nav-link:hover {
+    color: #fff; /* Schimbă culoarea textului la survol */
+    background-color: rgba(0, 0, 0, 0.2); /* Schimbă culoarea fundalului la survol */
+}
+
+/* Stiluri pentru imaginile din secțiunea "Fotografii" */
+.img-portfolio {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Adăugăm margini pentru a separa imaginile */
+.image-container {
+    margin-bottom: 20px;
+}
+
+/* Efect de mărire la trecerea cu mouse-ul peste imagine */
+.img-portfolio:hover {
+    transform: scale(1.05);
+}
+
+    /* Aplică fontul "Montserrat" la titluri */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Aplică fontul "Open Sans" la textul principal */
+    body, p {
+        font-family: 'Open Sans', sans-serif;
+    }
+
