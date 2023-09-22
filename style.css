@@ -6,107 +6,85 @@
     margin-bottom: 10px;
 }
 
-
-
 #about p.lead {
     margin-bottom: 10px;
 }
 
-
-
-/* Уменьшение внутреннего отступа (padding) для секции Infrastructure */
 #infrastructure {
-    padding: 20px; /* Задайте желаемое значение padding */
+    padding: 20px; 
 }
 
-/* Уменьшение внутреннего отступа (padding) для секции Services */
+
 #services {
-    padding: 20px; /* Задайте желаемое значение padding */
+    padding: 20px; 
 }
 
-/* Уменьшение внутреннего отступа (padding) для секции Facilities for residents */
+
 #facilities {
-    padding: 20px; /* Задайте желаемое значение padding */
+    padding: 20px; 
 }
 
 #about {
     padding: 10px;
-    padding-bottom: 10px !important /* Задайте желаемое значение padding */
+    padding-bottom: 10px !important 
 }
 
 #aims {
     padding: 10px;
     margin-top: 10px !important;
-    padding-top: 5px !important /* Задайте желаемое значение padding */
+    padding-top: 5px !important 
 }
-
 
 #objectives {
     padding: 10px;
     margin-top: 10px !important;
-    padding-top: 5px !important /* Задайте желаемое значение padding */
+    padding-top: 5px !important 
 }
 
 #infrastructure {
     padding: 10px;
     margin-top: 10px !important;
-    padding-top: 5px !important /* Задайте желаемое значение padding */
+    padding-top: 5px !important 
 }
 
 #services {
     padding: 10px;
     margin-top: 10px !important;
-    padding-top: 5px !important /* Задайте желаемое значение padding */
+    padding-top: 5px !important 
 }
 
 #facilities {
     padding: 10px;
     margin-top: 10px !important;
-    padding-top: 5px !important /* Задайте желаемое значение padding */
+    padding-top: 5px !important 
 }
 
 #team {
     padding: 10px;
     margin-top: 10px !important;
-    padding-top: 5px !important /* Задайте желаемое значение padding */
+    padding-top: 5px !important 
 }
 
 #contact {
     padding: 10px;
     margin-top: 10px !important;
-    padding-top: 5px !important /* Задайте желаемое значение padding */
+    padding-top: 5px !important 
 }
-
-/* Уменьшение расстояния между именем и почтовым адресом */
 
 .contact-item h5.card-title {
-    margin-bottom: 5px; /* Задайте желаемое значение отступа */
+    margin-bottom: 5px; 
 }
 
-
-
-/* Уменьшение вертикальных отступов между секциями */
-
-
-/* Уменьшение отступов между элементами внутри секции aims */
-
-
-/* Stiluri pentru secțiunea "Servicii" */
 #services {
     background-color: #ffffff;
 
 }
 
-/* Stiluri pentru secțiunea "Echipa" */
 #team {
     background-color: #f7f7f7;
     padding: 30px;
 }
 
-/* Stiluri pentru secțiunea "Fotografii" */
-
-
-/* Animatie pentru derulare lină */
 .navbar-nav a.nav-link {
     cursor: pointer;
     transition: color 0.3s ease, background-color 0.3s ease;
@@ -117,7 +95,6 @@
     background-color: rgba(0, 0, 0, 0.2); /* Schimbă culoarea fundalului la survol */
 }
 
-/* Stiluri pentru imaginile din secțiunea "Fotografii" */
 .img-portfolio {
     width: 100%;
     height: auto;
@@ -127,88 +104,72 @@
     transition: transform 0.2s ease-in-out;
 }
 
-/* Adăugăm margini pentru a separa imaginile */
 .image-container {
     margin-bottom: 10px;
 }
 
-/* Efect de mărire la trecerea cu mouse-ul peste imagine */
 .img-portfolio:hover {
     transform: scale(1.05);
 }
 
-    /* Aplică fontul "Montserrat" la titluri */
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Montserrat', sans-serif;
-    }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
 
-    /* Aplică fontul "Open Sans" la textul principal */
-    body, p {
-        font-family: 'Open Sans', sans-serif;
-    }
+  
+body, p {
+    font-family: 'Open Sans', sans-serif;
+}
 
-    .card-img-top {
-        height: 400px; /* Задайте желаемую высоту для изображения */
-        object-fit: cover; /* Заполнение изображения в заданной высоте без искажений */
-    }
+ .card-img-top {
+    height: 400px; 
+    object-fit: cover; 
+}
 
-    /* Для мобильных устройств (ширина экрана менее 768px) */
+    
 @media (max-width: 768px) {
-    /* Уменьшите размер шрифтов в меню навигации */
-    .navbar-nav a.nav-link {
-        font-size: 14px;
-    }
+.navbar-nav a.nav-link {
+     font-size: 14px;
+}
+
+header {
+     padding: 60px 0;
+}
     
-    /* Уменьшите высоту заголовка */
-    header {
-        padding: 60px 0;
-    }
+.navbar-nav a.nav-link img {
+    width: 20px;
+    height: 20px;
+     margin-right: 10px;
+}
     
-    /* Измените размер изображения в меню навигации */
-    .navbar-nav a.nav-link img {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
-    
-    /* Уменьшите высоту изображения в карточках сотрудников */
-    .card-img-top {
-        height: 250px;
+.card-img-top {
+    height: 250px;
     }
 }
 
-/* Для планшетов (ширина экрана от 768px до 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
-    /* Уменьшите размер шрифтов в меню навигации (если необходимо) */
-    /* И другие стили, если требуется */
+   
 }
 
-/* Для больших экранов (ширина экрана более 992px) */
 @media (min-width: 992px) {
-    /* Оставьте стили по умолчанию или настройте их для больших экранов */
+    
 }
 
-/* Добавление тени и закругленных углов для карточек в секции "Echipa" */
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-/* Добавление тени и закругленных углов для изображений в карточках */
 .card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-/* Применение шрифта Montserrat к заголовкам */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Применение шрифта Open Sans к основному тексту */
 body, p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px; /* Измените размер текста по вашему усмотрению */
+    font-size: 16px; 
 }
-
-
