@@ -1,13 +1,100 @@
-/* Stiluri pentru secțiunea "Despre noi" */
 #about {
-    background-color: #f7f7f7;
-    padding: 30px;
+    text-align: center;
 }
+
+#about h2 {
+    margin-bottom: 10px;
+}
+
+
+
+#about p.lead {
+    margin-bottom: 10px;
+}
+
+
+
+/* Уменьшение внутреннего отступа (padding) для секции Infrastructure */
+#infrastructure {
+    padding: 20px; /* Задайте желаемое значение padding */
+}
+
+/* Уменьшение внутреннего отступа (padding) для секции Services */
+#services {
+    padding: 20px; /* Задайте желаемое значение padding */
+}
+
+/* Уменьшение внутреннего отступа (padding) для секции Facilities for residents */
+#facilities {
+    padding: 20px; /* Задайте желаемое значение padding */
+}
+
+#about {
+    padding: 10px;
+    padding-bottom: 10px !important /* Задайте желаемое значение padding */
+}
+
+#aims {
+    padding: 10px;
+    margin-top: 10px !important;
+    padding-top: 5px !important /* Задайте желаемое значение padding */
+}
+
+
+#objectives {
+    padding: 10px;
+    margin-top: 10px !important;
+    padding-top: 5px !important /* Задайте желаемое значение padding */
+}
+
+#infrastructure {
+    padding: 10px;
+    margin-top: 10px !important;
+    padding-top: 5px !important /* Задайте желаемое значение padding */
+}
+
+#services {
+    padding: 10px;
+    margin-top: 10px !important;
+    padding-top: 5px !important /* Задайте желаемое значение padding */
+}
+
+#facilities {
+    padding: 10px;
+    margin-top: 10px !important;
+    padding-top: 5px !important /* Задайте желаемое значение padding */
+}
+
+#team {
+    padding: 10px;
+    margin-top: 10px !important;
+    padding-top: 5px !important /* Задайте желаемое значение padding */
+}
+
+#contact {
+    padding: 10px;
+    margin-top: 10px !important;
+    padding-top: 5px !important /* Задайте желаемое значение padding */
+}
+
+/* Уменьшение расстояния между именем и почтовым адресом */
+
+.contact-item h5.card-title {
+    margin-bottom: 5px; /* Задайте желаемое значение отступа */
+}
+
+
+
+/* Уменьшение вертикальных отступов между секциями */
+
+
+/* Уменьшение отступов между элементами внутри секции aims */
+
 
 /* Stiluri pentru secțiunea "Servicii" */
 #services {
     background-color: #ffffff;
-    padding: 30px;
+
 }
 
 /* Stiluri pentru secțiunea "Echipa" */
@@ -17,10 +104,7 @@
 }
 
 /* Stiluri pentru secțiunea "Fotografii" */
-#photos {
-    background-color: #ffffff;
-    padding: 30px;
-}
+
 
 /* Animatie pentru derulare lină */
 .navbar-nav a.nav-link {
@@ -45,7 +129,7 @@
 
 /* Adăugăm margini pentru a separa imaginile */
 .image-container {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Efect de mărire la trecerea cu mouse-ul peste imagine */
@@ -62,4 +146,69 @@
     body, p {
         font-family: 'Open Sans', sans-serif;
     }
+
+    .card-img-top {
+        height: 400px; /* Задайте желаемую высоту для изображения */
+        object-fit: cover; /* Заполнение изображения в заданной высоте без искажений */
+    }
+
+    /* Для мобильных устройств (ширина экрана менее 768px) */
+@media (max-width: 768px) {
+    /* Уменьшите размер шрифтов в меню навигации */
+    .navbar-nav a.nav-link {
+        font-size: 14px;
+    }
+    
+    /* Уменьшите высоту заголовка */
+    header {
+        padding: 60px 0;
+    }
+    
+    /* Измените размер изображения в меню навигации */
+    .navbar-nav a.nav-link img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+    /* Уменьшите высоту изображения в карточках сотрудников */
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+/* Для планшетов (ширина экрана от 768px до 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Уменьшите размер шрифтов в меню навигации (если необходимо) */
+    /* И другие стили, если требуется */
+}
+
+/* Для больших экранов (ширина экрана более 992px) */
+@media (min-width: 992px) {
+    /* Оставьте стили по умолчанию или настройте их для больших экранов */
+}
+
+/* Добавление тени и закругленных углов для карточек в секции "Echipa" */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Добавление тени и закругленных углов для изображений в карточках */
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Применение шрифта Montserrat к заголовкам */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Применение шрифта Open Sans к основному тексту */
+body, p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; /* Измените размер текста по вашему усмотрению */
+}
+
 
