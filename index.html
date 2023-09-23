@@ -13,16 +13,22 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-dark text-white text-center py-5">
-        <h1> Innovative IT Incubator IT4BA </h1>
-        <p>European Digital Economy Initiatives</p>
+    <header class="bg-lightgray text-white text-center py-5">
+        <h1> Innovative IT Incubator IT4BA </h1>
+        <p> European Digital Economy Initiatives </p>
     </header>
+    
 
     <!-- Meniu de Navigare -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-bordeaux">
+
         <div class="container">
             <a class="navbar-brand" href="#"><img src="photos/1.jpg" height="50" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,7 +132,7 @@
 <section id="infrastructure" class="bg-light container mt-5 py-5">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-6 text-center">
-            <h2 class="display-4">Infrastructure:</h2>
+            <h2 class="display-4">Structure:</h2>
             <ul class="list-group">
                 <li class="list-group-item">Existing spaces within ASEM - block B, et. 8, &gt; 1000 m2;</li>
                 <li class="list-group-item">8 residential locations in the field (ICT) formed on the basis of the contest;</li>
@@ -223,16 +229,82 @@
                 </div>
             </div>
             <div class="contact-links mt-4">
-                <a href="https://www.facebook.com/IT4BA" target="_blank" class="btn btn-primary mr-3">Visit Facebook Page</a>
-                <a href="https://yandex.ru/maps/org/89095638016/?ll=28.836841%2C47.030394&z=18.4" target="_blank" class="btn btn-primary">View on Yandex Maps</a>
+                <div class="contact-links mt-4">
+    <a href="https://www.facebook.com/IT4BA" target="_blank" class="btn btn-primary btn-block mb-2">Visit Facebook Page</a>
+    <a href="https://yandex.ru/maps/org/89095638016/?ll=28.836841%2C47.030394&z=18.4" target="_blank" class="btn btn-primary btn-block">View on Yandex Maps</a>
+</div>
+
+                
             </div>
         </div>
     </div>
 </section>
 
+<div class="container">
+    <h1 class="row justify-content-center">Galery</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#img1" data-toggle="modal" data-target="#myModal">
+          <img src="photos/11.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img2" data-toggle="modal" data-target="#myModal">
+          <img src="photos/12.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img3" data-toggle="modal" data-target="#myModal">
+          <img src="photos/13.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img3" data-toggle="modal" data-target="#myModal">
+          <img src="photos/14.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img3" data-toggle="modal" data-target="#myModal">
+          <img src="photos/16.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img3" data-toggle="modal" data-target="#myModal">
+          <img src="photos/photo1.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img3" data-toggle="modal" data-target="#myModal">
+          <img src="photos/photo2.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img3" data-toggle="modal" data-target="#myModal">
+          <img src="photos/photo3.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#img3" data-toggle="modal" data-target="#myModal">
+          <img src="photos/photo4.jpg" class="img-thumbnail">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <img src="" id="modalImage" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Footer -->
     <footer class="bg-secondary text-white text-center py-3">
-        <p>&copy; 2023 IT InkuBator</p>
+        <p>&copy; 2023 IT4BA</p>
     </footer>
 
     <script>
@@ -249,6 +321,31 @@
                 });
             });
         });
+
+        $(document).ready(function() {
+    $('.img-thumbnail').click(function() {
+        var imgSrc = $(this).attr('src');
+        $('#modalImage').attr('src', imgSrc);
+
+        // Setăm înălțimea maximă a imaginii în funcție de înălțimea ferestrei modale
+        var modalBody = $('#myModal .modal-body');
+        var modalImage = $('#modalImage');
+        modalImage.css('max-height', modalBody.height() - 20); // 20px pentru spațiu de la margine
+
+        // Deschideți modalul
+        $('#myModal').modal('show');
+
+        // Adăugați gestionarea derulării imaginilor în fereastra modală
+        $('#myModal').on('shown.bs.modal', function() {
+            modalBody.css('overflow-y', 'auto');
+        });
+
+        // Închideți modalul
+        $('#myModal').on('hidden.bs.modal', function() {
+            modalBody.css('overflow-y', 'hidden');
+        });
+    });
+});
     </script>
     
 </body>
