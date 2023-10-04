@@ -19,46 +19,74 @@
     
 </head>
 <body>
+
+   
     <!-- Header -->
     <header class="bg-lightgray text-center py-5">
-        <h1> Innovative IT Incubator IT4BA </h1>
-        <p> European Digital Economy Initiatives </p>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <!-- Логотип 1 (слева) -->
+                    <img src="/photos/logo-asem.png" width="200" height="60" title="Academia de Studii Economice">
+                </div>
+                <div class="col-md-8">
+                    <h1><strong>Innovative IT Incubator IT4BA</strong></h1>
+                    <p><strong>European Digital Economy Initiatives</strong></p>
+                </div>
+                <div class="col-md-2">
+                    <!-- Логотип 2 (справа) -->
+                    <img src="/photos/1.jpg" width="100" height="100" title="Your Second Logo">
+                </div>
+            </div>
+        </div>
     </header>
     
+   
 
     <!-- Meniu de Navigare -->
     <nav class="navbar navbar-expand-lg navbar-light bg-bordeaux">
 
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="photos/1.jpg" height="50" alt="logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="photos/1.jpg" height="50" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About us</a>
+                        <a  href="pages/about.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aims">Our aims</a>
+                        <a  href="pages/our-aims.html">Our aims</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#objectives">Objectives</a>
+                        <a  href="pages/objectives.html">Objectives</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#infrastructure">Infrastructure</a>
+                        <a  href="pages/infrastructure.html">Infrastructure</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a  href="pages/services.html">Services</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#facilities">Facilities</a>
+                        <a  href="pages/facilities.html">Facilities</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
+                        <a  href="pages/team.html">Team</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a href="pages/contact.html">Contact</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a  href="pages/galery.html">Galery</a>
+
                     </li>
                 </ul>
             </div>
@@ -243,56 +271,7 @@
     </div>
 </section>
 
-<div class="container">
-    <h1 class="row justify-content-center">Galery</h1>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="#img1" data-toggle="modal" data-target="#myModal">
-          <img src="photos/11.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img2" data-toggle="modal" data-target="#myModal">
-          <img src="photos/12.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img3" data-toggle="modal" data-target="#myModal">
-          <img src="photos/13.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img3" data-toggle="modal" data-target="#myModal">
-          <img src="photos/14.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img3" data-toggle="modal" data-target="#myModal">
-          <img src="photos/16.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img3" data-toggle="modal" data-target="#myModal">
-          <img src="photos/photo1.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img3" data-toggle="modal" data-target="#myModal">
-          <img src="photos/photo2.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img3" data-toggle="modal" data-target="#myModal">
-          <img src="photos/photo3.jpg" class="img-thumbnail">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#img3" data-toggle="modal" data-target="#myModal">
-          <img src="photos/photo4.jpg" class="img-thumbnail">
-        </a>
-      </div>
-    </div>
-  </div>
+
 
   <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -310,46 +289,31 @@
         <p>&copy; 2023 IT4BA</p>
     </footer>
 
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // Adaugă un eveniment pentru fiecare link din meniu
-        document.querySelectorAll('.navbar-nav a.nav-link').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault(); // Opriți comportamentul implicit al link-urilor
-    
-                const targetId = this.getAttribute('href').substring(1); // Obțineți ID-ul secțiunii țintă
-    
-                // Derulați treptat către secțiunea țintă
-                document.getElementById(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        $(document).ready(function() {
-    $('.img-thumbnail').click(function() {
-        var imgSrc = $(this).attr('src');
-        $('#modalImage').attr('src', imgSrc);
-
-        // Setăm înălțimea maximă a imaginii în funcție de înălțimea ferestrei modale
-        var modalBody = $('#myModal .modal-body');
-        var modalImage = $('#modalImage');
-        modalImage.css('max-height', modalBody.height() - 20); // 20px pentru spațiu de la margine
-
-        // Deschideți modalul
-        $('#myModal').modal('show');
-
-        // Adăugați gestionarea derulării imaginilor în fereastra modală
-        $('#myModal').on('shown.bs.modal', function() {
-            modalBody.css('overflow-y', 'auto');
-        });
-
-        // Închideți modalul
-        $('#myModal').on('hidden.bs.modal', function() {
-            modalBody.css('overflow-y', 'hidden');
-        });
+        $(document).ready(function () {
+    // Найдите все ссылки с классом "nav-link" внутри элементов с классом "navbar-nav"
+    $('.navbar-nav a.nav-link').on('click', function(e) {
+        // Предотвращаем стандартное поведение ссылок
+        e.preventDefault();
+        
+        // Получаем атрибут href ссылки и убираем символ "#" в начале
+        var targetId = $(this).attr('href').substring(1);
+        
+        // Прокручиваем к целевой секции с плавной анимацией
+        $('html, body').animate({
+            scrollTop: $('#' + targetId).offset().top
+        }, 1000); // Измените 1000 на необходимую вам длительность анимации
+        
+        // Закрываем навигационное меню после клика
+        $('.navbar-collapse').collapse('hide');
     });
 });
+
     </script>
+    
     
 </body>
 </html>

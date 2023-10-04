@@ -1,3 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+/* Стили для обычных ссылок */
+.navbar-nav li.nav-item a {
+    color: #FFFFFF; /* Цвет текста ссылки */
+    text-decoration: none; /* Убирает подчеркивание */
+    padding: 10px 15px; /* Отступы вокруг текста ссылки */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+/* Стили для активной ссылки */
+.navbar-nav li.nav-item a:hover,
+.navbar-nav li.nav-item.active a {
+    color: #ff5733; /* Измененный цвет при наведении или активной ссылке */
+}
+
+
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: white; 
 }
@@ -263,4 +288,14 @@ body, p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px; 
 }
+
+
+#modalImage {
+    max-width: 100%; /* Максимальная ширина изображения будет равна ширине модального окна */
+    max-height: 80vh; /* Максимальная высота будет равна 80% от высоты экрана */
+}
+
+
+
+
 
