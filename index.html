@@ -5,25 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT InkuBator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700" rel="stylesheet">
-
-    <!-- Includeți Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Includeți Bootstrap JavaScript și jQuery (necesare pentru anumite componente) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
 </head>
-<body>
+<body data-aos="fade-in">
 
    
     <!-- Header -->
-    <header class="bg-lightgray text-center py-5">
-        <div class="container">
+ <header class="bg-lightgray text-center py-5" data-aos="fade-down">       
+     <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-2">
                     <!-- Логотип 1 (слева) -->
@@ -44,7 +38,7 @@
    
 
     <!-- Meniu de Navigare -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-bordeaux">
+    <nav class="navbar navbar-expand-lg navbar-light bg-bordeaux" data-aos="fade-down">
 
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="photos/1.jpg" height="50" alt="logo"></a>
@@ -94,7 +88,7 @@
     </nav>
 
    <!-- Secțiunea "Despre noi" -->
-   <section id="about" class="bg-light container mt-5 py-5 text-center">
+   <section id="about" class="bg-light container mt-5 py-5 text-center" data-aos="fade-up">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="display-4">About us</h2>
@@ -112,7 +106,7 @@
 </section>
 
 <!-- Secțiunea "Servicii" -->
-<section id="aims" class="container mt-5">
+<section id="aims" class="container mt-5" data-aos="fade-up">
     <h2 class="text-center display-4">Our aims</h2>
     <div class="row">
         <div class="col-md-4">
@@ -136,7 +130,7 @@
     </div>
 </section>
 
-<section id="objectives" class="container mt-5">
+<section id="objectives" class="container mt-5" data-aos="fade-up">
     <h2 class="text-center display-4">There are established the following objectives:</h2>
     <div class="row">
         <div class="col-md-4">
@@ -160,7 +154,7 @@
     </div>
 </section>
 
-<section id="infrastructure" class="bg-light container mt-5 py-5">
+<section id="infrastructure" class="bg-light container mt-5 py-5" data-aos="fade-up">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-6 text-center">
             <h2 class="display-4">Structure:</h2>
@@ -179,7 +173,7 @@
     </div>
 </section>
 
-<section id="services" class="bg-light container mt-5 py-5">
+<section id="services" class="bg-light container mt-5 py-5" data-aos="fade-up">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-6 text-center">
             <h2 class="display-4">Services:</h2>
@@ -194,7 +188,7 @@
     </div>
 </section>
 
-<section id="facilities" class="bg-light container mt-5 py-5">
+<section id="facilities" class="bg-light container mt-5 py-5" data-aos="fade-up">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-6 text-center">
             <h2 class="display-4">Facilities for residents:</h2>
@@ -208,7 +202,7 @@
 </section>
 
 <!-- Secțiunea "Echipa" -->
-<section id="team" class="bg-light container mt-5 py-5">
+<section id="team" class="bg-light container mt-5 py-5" data-aos="fade-up">
     <h2 class="text-center display-4">Our team</h2>
     <div class="row">
         <div class="col-md-4">
@@ -241,7 +235,7 @@
     </div>
 </section>
 
-<section id="contact" class="bg-light container mt-5 py-5">
+<section id="contact" class="bg-light container mt-5 py-5" data-aos="fade-down">
     <div class="row justify-content-center">
         <div class="col-md-8 text-center">
             <h2 class="display-4 mb-4">Contact Information</h2>
@@ -271,47 +265,69 @@
     </div>
 </section>
 
-
-
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <img src="" id="modalImage" style="width: 100%;">
+ <!-- Footer -->
+ <!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">About</a></li>
+                    <li><a href="#" class="text-white">Admissions & Aid</a></li>
+                    <li><a href="#" class="text-white">Academics</a></li>
+                    <li><a href="#" class="text-white">Research</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Resources</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Library</a></li>
+                    <li><a href="#" class="text-white">Museums</a></li>
+                    <li><a href="#" class="text-white">Offices</a></li>
+                    <li><a href="#" class="text-white">Athletics</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Connect</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Contact</a></li>
+                    <li><a href="#" class="text-white">Directory</a></li>
+                    <li><a href="#" class="text-white">Maps & Directions</a></li>
+                    <li><a href="#" class="text-white">Social Media</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Privacy</a></li>
+                    <li><a href="#" class="text-white">Accessibility</a></li>
+                    <li><a href="#" class="text-white">Terms of Use</a></li>
+                    <li><a href="#" class="text-white">Copyright</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p>&copy; 2023 IT4BA. All rights reserved.</p>
+            </div>
+        </div>
     </div>
-  </div>
+</footer>
 
-    <!-- Footer -->
-    <footer class="bg-secondary text-white text-center py-3">
-        <p>&copy; 2023 IT4BA</p>
-    </footer>
 
-    
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-    // Найдите все ссылки с классом "nav-link" внутри элементов с классом "navbar-nav"
-    $('.navbar-nav a.nav-link').on('click', function(e) {
-        // Предотвращаем стандартное поведение ссылок
-        e.preventDefault();
-        
-        // Получаем атрибут href ссылки и убираем символ "#" в начале
-        var targetId = $(this).attr('href').substring(1);
-        
-        // Прокручиваем к целевой секции с плавной анимацией
-        $('html, body').animate({
-            scrollTop: $('#' + targetId).offset().top
-        }, 1000); // Измените 1000 на необходимую вам длительность анимации
-        
-        // Закрываем навигационное меню после клика
-        $('.navbar-collapse').collapse('hide');
-    });
-});
-
+            // ... (restul codului JavaScript pentru navigare) ...
+        });
     </script>
     
     
