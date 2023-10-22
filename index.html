@@ -19,7 +19,7 @@
 <body>
     <header class="header">
         <div class="header-box-1 bubble"></div>
-        <div class="header-box-2 bubble"></div>
+        <div class="header-box-2"></div>
         <nav class="navbar navbar-expand-lg navbar-light container">
             <a class="navbar-brand" href="./index.html"><img src="./photos/1.jpg" height="40" alt="logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -45,19 +45,53 @@
         </nav>
     </header>
     <main class="main mt-5 mb-5">
-        <!-- Section About us -->
-        <section id="about" class="bg-light container mt-5 py-5 text-center" data-aos="fade-up">
-            <div class="row justify-content-center">
+        <div class="carousel-bubble bubble"></div>
+        <section id="hero" class="container hero mb-5" data-aos="fade-down">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <h2 class="display-4">About us</h2>
-                    <p class="lead">
+                    <h1 class="display-3">IT Incubator</h1>
+                </div>
+                <div class="col-md-6">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
+                        <div class="carousel-inner carousel-box">
+                            <div class="carousel-item active">
+                                <img class="carousel-img" src="./photos/12.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="carousel-img" src="./photos/13.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="carousel-img" src="./photos/14.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 hero-buttons">
+                    <div class="events-box"><a href="./events.html">Events</a></div>
+                    <div class="services-box"><a href="#services">Services</a></div>
+                </div>
+            </div>
+        </section>
+        <!-- Section About us -->
+        <section id="about" class="container about-us mt-5 mb-5" data-aos="fade-up">
+            <div class="about-us-box-2 bubble"></div>
+            <div class="about-us-box-1 circle"></div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <img src="photos/it4ba.jpg" alt="Description of the image" class="img-fluid about-us-img" />
+                </div>
+                <div class="col-md-6">
+                    <div class="line"></div>
+                    <h3 class="display-4 text-center">About us</h3>
+                    <p class="lead text-center mt-2">
                         The IT4BA Incubator was created according to the December 2014
                         decision of the Senate of the Academy of Economic Studies of
                         Moldova and the July 30, 2015 decision of the Supreme Council for
                         Science and Technological Development of the Academy of Sciences
                         of Moldova.
                     </p>
-                    <p class="lead">
+                    <p class="lead text-center mt-2">
                         It is aimed at providing practical assistance and methodical
                         training and upgrading of the intellectual, innovative and
                         educational capacities of incubator and other stakeholders' staff
@@ -66,225 +100,138 @@
                         Moldova.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <img src="photos/it4ba.jpg" alt="Description of the image" class="img-fluid" />
-                </div>
+
             </div>
         </section>
 
-        <!-- Secțiunea "Servicii" -->
-        <!-- <section id="aims" class="container mt-5" data-aos="fade-up">
-        <h2 class="text-center display-4">Our aims</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <p>
-                    • In the context of the information society, we are witnessing a
-                    dramatic increase in the role of information and communication
-                    technologies in the economic development, which proved to be a
-                    decisive factor in the development of modern and reliable economic
-                    entities.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    • Incubator aims to provide practical and methodical assistance for
-                    students, postgraduate, doctoral candidates and young professionals
-                    in creating innovative start-ups that will help increase the
-                    competitiveness of the Republic of Moldova.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    • Another important goal - the creation of the educational ecosystem
-                    on the basis of the Faculty of Information Technologies and Economic
-                    Statistics, Academy of Science of Moldova and the public private
-                    partnership with various organizations working in the field of
-                    Information Communication Technologies (ICT).
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="objectives" class="container mt-5" data-aos="fade-up">
-        <h2 class="text-center display-4">
-            There are established the following objectives:
-        </h2>
-        <div class="row">
-            <div class="col-md-4">
-                <p>
-                    • Stimulating innovation and technology transfer in order to
-                    introduce ICT-based circuit of research results
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    • Increase the quality and competitiveness of SMEs that rely on ICT
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    • Supporting ICT strategies in sustainable regional development.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="infrastructure" class="bg-light container mt-5 py-5" data-aos="fade-up">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-6 text-center">
-                <h2 class="display-4">Structure:</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        Existing spaces within ASEM - block B, et. 8, &gt; 1000 m2;
-                    </li>
-                    <li class="list-group-item">
-                        8 residential locations in the field (ICT) formed on the basis of
-                        the contest;
-                    </li>
-                    <li class="list-group-item">
-                        Three laboratories: MS IT Academy and application software (eg
-                        automated bookkeeping), a specialized e-commerce and internet
-                        marketing laboratory, a geographic information systems laboratory
-                        (GIS);
-                    </li>
-                    <li class="list-group-item">
-                        Modern computer room (18) equipped with docking room 2 projectors
-                        and transferable screens, audio system, wall board;
-                    </li>
-                    <li class="list-group-item">
-                        Team building room (for 25 seats) equipped with projector and
-                        furniture board;
-                    </li>
-                    <li class="list-group-item">Conference room 50 seats;</li>
-                    <li class="list-group-item">
-                        Meeting room for 8 people with scanner, color printer, doc camera;
-                    </li>
-                    <li class="list-group-item">Black and white A3 printer;</li>
-                    <li class="list-group-item">Black and white A4 size printer;</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="bg-light container mt-5 py-5" data-aos="fade-up">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-6 text-center">
-                <h2 class="display-4">Services:</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        Mentoring, Advice (legal, business, etc.)
-                    </li>
-                    <li class="list-group-item">
-                        Special educational short time and long time programs oriented to
-                        information society development
-                    </li>
-                    <li class="list-group-item">
-                        Office space for Start UP teams, renting fees lower than those of
-                        the market
-                    </li>
-                    <li class="list-group-item">
-                        Administrative and technical services (telephone, fax, conference
-                        rooms, training, secretary services, etc.)
-                    </li>
-                    <li class="list-group-item">
-                        Briefings, technology transfer activities, seminars, professional
-                        training, etc.
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="facilities" class="bg-light container mt-5 py-5" data-aos="fade-up">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-6 text-center">
-                <h2 class="display-4">Facilities for residents:</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        Assisting and consulting new entrepreneurs to organize the work
-                        and build an innovative business model
-                    </li>
-                    <li class="list-group-item">
-                        Providing professional advisers in economic, information
-                        technology, management, and legal field
-                    </li>
-                    <li class="list-group-item">
-                        Meeting room, StartUpRoom equipped with fax, telephone, and
-                        projector
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section> -->
-
-        <!-- Secțiunea "Echipa" -->
-        <section id="team" class="bg-light container mt-5 py-5" data-aos="fade-up">
-            <h2 class="text-center display-4">Our team</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="photos/Sergiu.jpg" alt="John Doe" class="card-img-top" />
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Tutunaru Sergiu</h3>
-                            <p class="card-text">Director</p>
+        <!-- Section "Our Team" -->
+        <section id="team" class="bg-light" data-aos="fade-up">
+            <div class="container pt-3 pb-4">
+                <h2 class="text-center display-4 mb-4">Our team</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-12">
+                        <div class="card team-img-thumb">
+                            <img src="photos/Sergiu.jpg" alt="Tutunaru Sergiu - Director Incubator" width="288"
+                                height="335" class="card-img-top" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Tutunaru Sergiu</h3>
+                                <p class="card-text">Director Incubator</p>
+                                <div class="d-flex justify-content-around mt-2">
+                                    <a href="mailto:tutunaru@ase.md" class="icon-box">
+                                        <svg width="1em" height="1em" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.46 1.27l5.543 3.938 5.541-3.937" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path clip-rule="evenodd"
+                                                d="M2.101 10.166c-.515 0-.933-.371-.933-.83V1.664c0-.459.418-.83.933-.83h9.8c.516 0 .934.371.934.83v7.674c0 .458-.418.83-.934.83h-9.8z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="tel:+37369224000" class="icon-box">
+                                        <svg width="1em" height="1em" viewBox="0 0 14 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path clip-rule="evenodd"
+                                                d="M1.41 2.098a.264.264 0 01.24-.212l2.886-.217c.28-.022.53.176.566.45l.344 2.54a.516.516 0 01-.151.436l-1.13 1.11a.515.515 0 000 .737l3.507 3.447a.537.537 0 00.75 0l1.144-1.125a.535.535 0 01.41-.152l2.364.156c.28.018.498.248.495.525l-.032 3.052a.262.262 0 01-.216.254c-3.106.57-6.443.196-8.91-2.228C1.209 8.444.822 5.151 1.41 2.098z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="photos/Ionelia.jpg" alt="Jane Smith" class="card-img-top" />
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Dașchevici Ionelia</h3>
-                            <p class="card-text">Project Manager</p>
+                    <div class="col-lg-4 col-12">
+                        <div class="card team-img-thumb">
+                            <img src="photos/Ionelia.jpg" alt="Dașchevici Ionelia - Project Manager" width="288"
+                                height="335" class="card-img-top" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Dașchevici Ionelia</h3>
+                                <p class="card-text">Project Manager</p>
+                                <div class="d-flex justify-content-around mt-2">
+                                    <a href="mailto:daschevici.ionelia@ase.md" class="icon-box">
+                                        <svg width="1em" height="1em" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.46 1.27l5.543 3.938 5.541-3.937" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path clip-rule="evenodd"
+                                                d="M2.101 10.166c-.515 0-.933-.371-.933-.83V1.664c0-.459.418-.83.933-.83h9.8c.516 0 .934.371.934.83v7.674c0 .458-.418.83-.934.83h-9.8z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="tel:+37360239229" class="icon-box">
+                                        <svg width="1em" height="1em" viewBox="0 0 14 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path clip-rule="evenodd"
+                                                d="M1.41 2.098a.264.264 0 01.24-.212l2.886-.217c.28-.022.53.176.566.45l.344 2.54a.516.516 0 01-.151.436l-1.13 1.11a.515.515 0 000 .737l3.507 3.447a.537.537 0 00.75 0l1.144-1.125a.535.535 0 01.41-.152l2.364.156c.28.018.498.248.495.525l-.032 3.052a.262.262 0 01-.216.254c-3.106.57-6.443.196-8.91-2.228C1.209 8.444.822 5.151 1.41 2.098z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="photos/unknown.png" alt="Robert Johnson" class="card-img-top" />
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Covalenco Ion</h3>
-                            <p class="card-text">Technical Support</p>
+                    <div class="col-lg-4 col-12">
+                        <div class="card team-img-thumb">
+                            <img src="photos/unknown.png" alt="Covalenco Ion - Technical Support" width="288"
+                                height="335" class="card-img-top" />
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Covalenco Ion</h3>
+                                <p class="card-text">Technical Support</p>
+                                <div class="d-flex justify-content-center mt-2">
+                                    <a href="mailto:ion.covalenco@ase.md" class="icon-box">
+                                        <svg width="1em" height="1em" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.46 1.27l5.543 3.938 5.541-3.937" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path clip-rule="evenodd"
+                                                d="M2.101 10.166c-.515 0-.933-.371-.933-.83V1.664c0-.459.418-.83.933-.83h9.8c.516 0 .934.371.934.83v7.674c0 .458-.418.83-.934.83h-9.8z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="bg-light container mt-5 py-5" data-aos="fade-down">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2 class="display-4 mb-4">Contact Information</h2>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h5 class="card-title">Director Incubator - Tutunaru Sergiu</h5>
-                            <p class="card-text">
-                                <a href="mailto:tutunaru@ase.md">tutunaru@ase.md</a>
-                            </p>
-                        </div>
-                        <div class="contact-item">
-                            <h5 class="card-title">Project Manager - Dașchevici Ionelia</h5>
-                            <p class="card-text">
-                                <a href="mailto:daschevici.ionelia@ase.md">daschevici.ionelia@ase.md</a>
-                            </p>
-                        </div>
-                        <div class="contact-item">
-                            <h5 class="card-title">Technical Support - Covalenco Ion</h5>
-                            <p class="card-text">
-                                <a href="mailto:ion.covalenco@ase.md">ion.covalenco@ase.md</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact-links mt-4">
-                        <div class="contact-links mt-4">
-                            <a href="https://www.facebook.com/IT4BA" target="_blank"
-                                class="btn btn-primary btn-block mb-2">Visit Facebook Page</a>
-                            <a href="https://yandex.ru/maps/org/89095638016/?ll=28.836841%2C47.030394&z=18.4"
-                                target="_blank" class="btn btn-primary btn-block">View on Yandex Maps</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Seciton  "Services"-->
+        <section id="services" class="services-section container mt-3" data-aos="fade-up">
+            <div class="services-box bubble"></div>
+            <h3 class="text-center display-4 mb-4">Services</h3>
+            <ul class="text-center">
+                <li class="mb-2">
+                    • Mentoring, Advice (legal, business, etc.)
+                </li>
+                <li class="mb-2">
+                    • Special educational short time and long time programs oriented to
+                    information society development
+                </li>
+                <li class="mb-2">
+                    • Office space for Start UP teams, renting fees lower than those of
+                    the market
+                </li>
+                <li class="mb-2">
+                    • Administrative and technical services (telephone, fax, conference
+                    rooms, training, secretary services, etc.)
+                </li>
+                <li>
+                    • Briefings, technology transfer activities, seminars, professional
+                    training, etc.
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="footer">
@@ -423,23 +370,21 @@
             </div>
             <div class="footer-box-1 bubble"></div>
             <div class="footer-box-2"></div>
-
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1200,
         });
     </script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () { });
+        $(document).ready(function () {
+        });
     </script>
 </body>
 
